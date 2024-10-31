@@ -1,0 +1,26 @@
+name: tests
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  vitest:
+    name: API Tests
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
+      with:
+        node-version: "22"
+    - name: Install deps
+      run: npm install
+    - name: Build app
+      run: npm run build
+    - name: Run app
+      run: RUNNER_TRACKING_ID="" && (nohup npm run start &)
+    - name: Run tests
+      run: npm run test
