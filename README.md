@@ -1,8 +1,7 @@
 # Fastify Example
 
 This example starts a [Fastify](https://www.fastify.io/) server.
-
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/ZZ50Bj)
+The original template was created by Faraz Patankar
 
 ## ✨ Features
 
