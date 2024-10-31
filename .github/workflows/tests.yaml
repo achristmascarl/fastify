@@ -21,6 +21,6 @@ jobs:
     - name: Build app
       run: npm run build
     - name: Run app
-      run: screen -S fastify "npm run start"
+      run: RUNNER_TRACKING_ID="" && (nohup npm run start &)
     - name: Run tests
       run: npm run test
