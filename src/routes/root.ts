@@ -10,7 +10,7 @@ const root: FastifyPluginAsync = async (fastify: FastifyInstance) => {
     return response;
   });
 
-  fastify.get("/weekday", async (request, reply) => {
+  fastify.get("/wekday", async (request, reply) => {
     const dateQuery: string | undefined = (request.query as any).date;
     if (!dateQuery) {
       return reply
