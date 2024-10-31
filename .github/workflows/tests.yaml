@@ -21,6 +21,6 @@ jobs:
     - name: Build app
       run: npm run build
     - name: Run app
-      run: npm run start
+      run: screen -S fastify "npm run start"
     - name: Run tests
       run: npm run test
