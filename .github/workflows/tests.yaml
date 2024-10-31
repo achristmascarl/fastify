@@ -17,7 +17,6 @@ jobs:
         node-version: "22"
     - name: Install deps
       run: npm install
-    - name: Run app
     - name: Build app
       run: npm run build
     - name: Run app
