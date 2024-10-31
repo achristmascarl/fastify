@@ -1,7 +1,7 @@
 # Fastify Example
 
 This example starts a [Fastify](https://www.fastify.io/) server.
-The original template was created by Faraz Patankar
+The original template was created by [Faraz Patankar](https://github.com/railwayapp-templates/fastify)
 
 ## ✨ Features
 
